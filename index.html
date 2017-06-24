@@ -254,10 +254,15 @@ function myMap() {
     animation: google.maps.Animation.BOUNCE
   });
   marker.setMap(map);
+ var infowindow = new google.maps.InfoWindow({
+    content: "Hello World!"
+  });
+  infowindow.open(map,marker);
+
 }
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSvkmRK7vxRLm2vn4HVQt9cvF7xL-7aeQ&callback=myMap"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHyZIpJ_xeM-nYaDipaKtHgu6MoBTIM78&callback=myMap"></script>
 
 
 </div>
