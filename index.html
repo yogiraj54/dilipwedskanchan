@@ -247,7 +247,7 @@ function showDivs(n) {
 function myMap() {
   var mapCanvas = document.getElementById("map");
   var myCenter = new google.maps.LatLng(15.877853,74.453373); 
-  var mapOptions = {center: myCenter, zoom: 50};
+  var mapOptions = {center: myCenter, zoom: 20};
   var map = new google.maps.Map(mapCanvas,mapOptions);
   var marker = new google.maps.Marker({
     position: myCenter,
@@ -255,7 +255,7 @@ function myMap() {
   });
   marker.setMap(map);
  var infowindow = new google.maps.InfoWindow({
-    content: "Hello World!"
+    content: "Bride's Home!"
   });
   infowindow.open(map,marker);
 
